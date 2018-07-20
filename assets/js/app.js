@@ -8,14 +8,14 @@ import Vue from 'vue';
 import Ejemplos from './helpers/encoreExample.js';
 import ToDoList from './components/ToDoList.vue'
 
-// Para Note example
+// Para Note example de Ortu
 import ArrayHelper from './helpers/ArrayHelper';
 import axios from 'axios';
 import NoteList from './components/NoteList.vue'
 window.events = new Vue();
 window.axios = axios;
-const app = new Vue({
-  el: '#app',
+const appOrtu = new Vue({
+  el: '#app-ortu',
   components: { NoteList }
 });
 
