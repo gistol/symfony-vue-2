@@ -1,20 +1,21 @@
-yarn add --dev @symfony/webpack-encore webpack-notifier jquery vue vue-loader@^14 vue-template-compiler materialize-css lodash axios
+#Symfony-Vue
 
-Symfony-Vue
+##Requerimientos:
+    - [Node](https://nodejs.org/)
+    - [Yarn (tambien puede usarse npm)](https://yarnpkg.com/)
+    - [Symfony Encore](https://symfony.com/doc/3.4/frontend/encore/installation.html)
 
-Requerimientos:
-    * [Node](https://nodejs.org/)
-    * [Yarn (tambien puede usarse npm)](https://yarnpkg.com/)
-    * [Symfony Encore](https://symfony.com/doc/3.4/frontend/encore/installation.html)
+##Referencias:
+    - [Symfony Encore](https://symfony.com/doc/3.4/frontend.html)
+    - [Encore FAQ](https://symfony.com/doc/3.4/frontend/encore/faq.html)
+    - [Encore + Vue](https://symfony.com/doc/3.4/frontend/encore/vuejs.html)
+    - [Getting Started With Vue.Js In Symfony (usa Symfony 4)](https://www.cloudways.com/blog/symfony-vuejs-app/)
 
-Referencias:
-    * [Symfony Encore](https://symfony.com/doc/3.4/frontend.html)
-    * [Encore FAQ](https://symfony.com/doc/3.4/frontend/encore/faq.html)
-    * [Encore + Vue](https://symfony.com/doc/3.4/frontend/encore/vuejs.html)
-    * [Getting Started With Vue.Js In Symfony (usa Symfony 4)](https://www.cloudways.com/blog/symfony-vuejs-app/)
-
+##Instalación:
 1. `yarn add @symfony/webpack-encore --dev`
+
 2. `yarn add --dev vue vue-loader@^14.2.2 vue-template-compiler webpack-notifier`
+
 3. Configurar Encore: [crear el archivo webpack.config.js](https://symfony.com/doc/3.4/frontend/encore/simple-example.html)
     - Crear las carpetas `assets`, `assets/js` y `assets/css`. Crear el archivo `assets/js/app.js` como indica la documentacion
     - Comandos para compilar los `assets` (javascripts y css)
@@ -68,7 +69,25 @@ Referencias:
         ;
     ```
 
-7. Agregamos [MaterializeCSS](https://materializecss.com/)
+7. Inicializamos Vue:
+
+    * Importar Vue y crear la instancia de la aplicacion:
+
+    ```js
+    require('../css/app.css');
+
+    // import de otros pluggins
+
+    import Vue from 'vue';
+
+    const app = new Vue({
+        el: '#app'
+    });
+    ```
+
+##Plugins útiles:
+
+1. [MaterializeCSS](https://materializecss.com/)
 
     * Agregamos el paquete con `yarn`
 
@@ -77,12 +96,11 @@ Referencias:
     ```
 
 
-    * Importamos los estilos y el js en `assets/js/app.js`
+    * Importamos los estilos y el js. Queda global y accesible desde cualquier componente de Vue:
 
     ```js
     // assets/js/app.js
 
-    require('../css/app.css');
     require('materialize-css/dist/css/materialize.css');
     import 'materialize-css/dist/js/materialize.js';
     ```
@@ -101,23 +119,8 @@ Referencias:
     * Compilar los recursos `yarn run encore dev`
     * Levantar la aplicacion `php bin/console server:run`
 
-8. Inicializamos Vue:
 
-    * Importar Vue y crear la instancia de la aplicacion:
-
-    ```js
-    // assets/js/app.js
-
-    // import de materialize, etc
-
-    import Vue from 'vue';
-
-    const app = new Vue({
-        el: '#app'
-    });
-    ```
-
-9. [axios](https://github.com/axios/axios)
+2. [axios](https://github.com/axios/axios)
 
     * Agregamos el paquete
 
@@ -138,3 +141,41 @@ Referencias:
 
     // ...
     ```
+
+3. [JQuery](https://jquery.com/)
+
+    * Agregamos el paquete con `yarn`
+
+    ```bash
+    $ yarn add jquery
+    ```
+
+
+    * Importamos jquery y se lo asignamos a la variable `$`. Queda global y accesible desde cualquier componente de Vue:
+
+    ```js
+    // assets/js/app.js
+
+    const $ = require('jquery');
+    ```
+
+4. [Lodash](https://lodash.com/)
+
+    * Agregamos el paquete con `yarn`
+
+    ```bash
+    $ yarn add lodash
+    ```
+
+
+    * Importamos Lodash y se lo asignamos a la variable `_`. Queda global y accesible desde cualquier componente de Vue:
+
+    ```js
+    // assets/js/app.js
+
+    var _ = require('lodash');
+    ```
+
+
+##Comando para instalar todo con Yarn:
+yarn add --dev @symfony/webpack-encore webpack-notifier jquery vue vue-loader@^14 vue-template-compiler materialize-css lodash axios
