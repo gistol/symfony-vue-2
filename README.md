@@ -1,7 +1,7 @@
 # Symfony-Vue
 
 ## Requerimientos:
-    - [Node](https://nodejs.org/)
+    * [Node](https://nodejs.org/)
     - [Yarn (tambien puede usarse npm)](https://yarnpkg.com/)
     - [Symfony Encore](https://symfony.com/doc/3.4/frontend/encore/installation.html)
 
