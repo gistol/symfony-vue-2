@@ -5,84 +5,100 @@
 {% endblock %}
 
 {% block content %}
-    <div id="example1" class="col s12">
-        <h5><b>Description:</b> This looks like rendering a string template, but Vue has done a lot of work under the hood. The data and the DOM are now linked, and everything is now reactive:</h5>
-        <br>
-        <div id="app-1">
-            <div class="row">
-                Text: <span v-text="message"></span>
-            </div>
-        </div>
-    </div>
-
-    <div id="example2" class="col s12">
-        <h5><b>Description:</b> In addition to text interpolation, we can also bind element attributes like this:</h5>
-        <br>
-        <div id="app-2">
-            <div class="row">
-                <span v-bind:title="message">
-                Hover your mouse over me for a few seconds
-                to see my dynamically bound title!
-                </span>
-            </div>
-        </div>
-    </div>
-
-    <div id="example3" class="col s12">
-        <h5><b>Description:</b> This example demonstrates that we can bind data to not only text and attributes, but also the structure of the DOM:</h5>
-        <br>
-        <div id="app-3">
-            <div class="row">
-                <ol>
-                    <li v-for="todo in todos">
-                        <span v-text="todo.text"></span>
-                    </li>
-                </ol>
-            </div>
-        </div>
-    </div>
-
-    <div id="example4" class="col s12">
-        <h5><b>Description:</b>To let users interact with your app, we can use the v-on directive to attach event listeners that invoke methods on our Vue instances:</h5>
-        <br>
-        <div id="app-4">
-            <div class="row">
-                <span v-text="message"></span>
-                <button v-on:click="reverseMessage">Reverse Message</button>
-            </div>
-        </div>
-    </div>
-
-    <div id="example5" class="col s12">
-        <h5><b>Description:</b>Vue also provides the v-model directive that makes two-way binding between form input and app state a breeze:</h5>
-        <br>
-        <div id="app-5">
-            <div class="row">
-                <div class="input-field col s6">
-                    <input id="inputExample5" type="text" class="validate" v-model="message">
-                    <label class="active" for="inputExample5">Insert text here</label>
-                </div>
-                <div class="input-field col s6">
-                    <u>Input's message:</u> <span v-text="message"></span>
+    <div id="example1" class="row">
+        <div class="col s12">
+            <br>
+            <h5><b>Description:</b> This looks like rendering a string template, but Vue has done a lot of work under the hood. The data and the DOM are now linked, and everything is now reactive:</h5>
+            <br>
+            <div id="app-1">
+                <div class="row">
+                    Text: <span v-text="message"></span>
                 </div>
             </div>
         </div>
     </div>
 
-    <div id="exampleComponents" class="col s12">
-        <h5><b>Description:</b> The component system is another important concept in Vue, because it’s an abstraction that allows us to build large-scale applications composed of small, self-contained, and often reusable components.</h5>
-        <br>
-        <div id="app-6">
-            <div class="row">
+    <div id="example2" class="row">
+        <div class="col s12">
+            <br>
+            <h5><b>Description:</b> In addition to text interpolation, we can also bind element attributes like this:</h5>
+            <br>
+            <div id="app-2">
+                <div class="row">
+                    <span v-bind:title="message">
+                    Hover your mouse over me for a few seconds
+                    to see my dynamically bound title!
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="example3" class="row">
+        <div class="col s12">
+            <br>
+            <h5><b>Description:</b> This example demonstrates that we can bind data to not only text and attributes, but also the structure of the DOM:</h5>
+            <br>
+            <div id="app-3">
+                <div class="row">
+                    <ol>
+                        <li v-for="todo in todos">
+                            <span v-text="todo.text"></span>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="example4" class="row">
+        <div class="col s12">
+            <br>
+            <h5><b>Description:</b> To let users interact with your app, we can use the v-on directive to attach event listeners that invoke methods on our Vue instances:</h5>
+            <br>
+            <div id="app-4">
+                <div class="row">
+                    <span v-text="message"></span>
+                    <button v-on:click="reverseMessage">Reverse Message</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="example5" class="row">
+        <div class="col s12">
+            <br>
+            <h5><b>Description:</b> Vue also provides the v-model directive that makes two-way binding between form input and app state a breeze:</h5>
+            <br>
+            <div id="app-5">
+                <div class="row">
+                    <div class="input-field col s6">
+                        <input id="inputExample5" type="text" class="validate" v-model="message">
+                        <label class="active" for="inputExample5">Insert text here</label>
+                    </div>
+                    <div class="input-field col s6">
+                        <u>Input's message:</u> <span v-text="message"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div id="exampleComponents" class="col s12">
+            <!-- <br>
+            <h5><b>Description:</b> The component system is another important concept in Vue, because it’s an abstraction that allows us to build large-scale applications composed of small, self-contained, and often reusable components.</h5> -->
+            <br>
+            <div id="app-6">
                 <to-do-list></to-do-list>
             </div>
         </div>
     </div>
 
-    <div id="exampleComponentsOrtu" class="col s12">
-        <br>
-        <div id="app-ortu">
-            <div class="row">
+    <div class="row">
+        <div id="exampleComponentsOrtu" class="col s12">
+            <br>
+            <div id="app-ortu">
                 <note-list></note-list>
             </div>
         </div>
