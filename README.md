@@ -1,15 +1,15 @@
 # Symfony-Vue
 
 ## Requerimientos:
-    * [Node](https://nodejs.org/)
-    - [Yarn (tambien puede usarse npm)](https://yarnpkg.com/)
-    - [Symfony Encore](https://symfony.com/doc/3.4/frontend/encore/installation.html)
+- [Node](https://nodejs.org/)
+- [Yarn (tambien puede usarse npm)](https://yarnpkg.com/)
+- [Symfony Encore](https://symfony.com/doc/3.4/frontend/encore/installation.html)
 
 ## Referencias:
-    - [Symfony Encore](https://symfony.com/doc/3.4/frontend.html)
-    - [Encore FAQ](https://symfony.com/doc/3.4/frontend/encore/faq.html)
-    - [Encore + Vue](https://symfony.com/doc/3.4/frontend/encore/vuejs.html)
-    - [Getting Started With Vue.Js In Symfony (usa Symfony 4)](https://www.cloudways.com/blog/symfony-vuejs-app/)
+- [Symfony Encore](https://symfony.com/doc/3.4/frontend.html)
+- [Encore FAQ](https://symfony.com/doc/3.4/frontend/encore/faq.html)
+- [Encore + Vue](https://symfony.com/doc/3.4/frontend/encore/vuejs.html)
+- [Getting Started With Vue.Js In Symfony (usa Symfony 4)](https://www.cloudways.com/blog/symfony-vuejs-app/)
 
 ## Instalación:
 1. `yarn add @symfony/webpack-encore --dev`
@@ -120,7 +120,7 @@
     * Levantar la aplicacion `php bin/console server:run`
 
 
-2. [axios](https://github.com/axios/axios)
+2. [Axios](https://github.com/axios/axios)
 
     * Agregamos el paquete
 
