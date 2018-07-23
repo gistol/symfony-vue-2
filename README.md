@@ -1,17 +1,17 @@
-#Symfony-Vue
+# Symfony-Vue
 
-##Requerimientos:
+## Requerimientos:
     - [Node](https://nodejs.org/)
     - [Yarn (tambien puede usarse npm)](https://yarnpkg.com/)
     - [Symfony Encore](https://symfony.com/doc/3.4/frontend/encore/installation.html)
 
-##Referencias:
+## Referencias:
     - [Symfony Encore](https://symfony.com/doc/3.4/frontend.html)
     - [Encore FAQ](https://symfony.com/doc/3.4/frontend/encore/faq.html)
     - [Encore + Vue](https://symfony.com/doc/3.4/frontend/encore/vuejs.html)
     - [Getting Started With Vue.Js In Symfony (usa Symfony 4)](https://www.cloudways.com/blog/symfony-vuejs-app/)
 
-##Instalación:
+## Instalación:
 1. `yarn add @symfony/webpack-encore --dev`
 
 2. `yarn add --dev vue vue-loader@^14.2.2 vue-template-compiler webpack-notifier`
@@ -85,7 +85,7 @@
     });
     ```
 
-##Plugins útiles:
+## Plugins útiles:
 
 1. [MaterializeCSS](https://materializecss.com/)
 
@@ -177,5 +177,5 @@
     ```
 
 
-##Comando para instalar todo con Yarn:
+## Comando para instalar todo con Yarn:
 yarn add --dev @symfony/webpack-encore webpack-notifier jquery vue vue-loader@^14 vue-template-compiler materialize-css lodash axios
