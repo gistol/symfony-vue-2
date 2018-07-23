@@ -1,3 +1,6 @@
+nav {
+    background-color: #00acc1 !important;
+}
 .textoRojo{
     color: red;
 }
@@ -5,8 +8,3 @@
 .textoCentrado{
     text-align: center;
 }
-/* 
-#plus-button {
-  right: 25px;
-  position: absolute;
-} */
