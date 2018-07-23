@@ -8,7 +8,7 @@
 export default {
   methods: {
     created() {
-      events.$emit('new-todo');
+      events.$emit('new-to-do');
     }
   }
 }

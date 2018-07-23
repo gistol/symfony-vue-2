@@ -1,6 +1,6 @@
 <template>
     <div>
-        <new-todo-button></new-todo-button>
+        <new-to-do-button></new-to-do-button>
     </div>
 </template>
 
