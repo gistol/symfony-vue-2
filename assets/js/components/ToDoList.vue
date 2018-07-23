@@ -12,7 +12,7 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <to-do-item v-for="toDoItem in toDoItems" :key="toDoItem.id" :toDoItem="toDoItem"></to-do-item>
+                    <to-do-item v-for="toDoItem in toDoItemsOrdered" :key="toDoItem.id" :toDoItem="toDoItem"></to-do-item>
                 </tbody>
             </table>
         </div>
@@ -29,6 +29,12 @@ export default {
     data() {
         return {
             toDoItems: []
+        }
+    },
+
+    computed: {
+        toDoItemsOrdered: function () {
+            return _.orderBy(this.toDoItems, 'id')
         }
     },
 

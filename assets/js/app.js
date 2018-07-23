@@ -1,23 +1,21 @@
 require('../css/app.css');
+
+// Including Materialize
 require('materialize-css/dist/css/materialize.css');
 import 'materialize-css/dist/js/materialize.js';
 
+// Including JQuery
 const $ = require('jquery');
+
+// Including Lodash (used for orderby function)
+var _ = require('lodash');
 
 import Vue from 'vue';
 import Ejemplos from './helpers/encoreExample.js';
 import ToDoList from './components/ToDoList.vue'
-
-// Para Note example de Ortu
-import ArrayHelper from './helpers/ArrayHelper';
 import axios from 'axios';
-import NoteList from './components/NoteList.vue'
 window.events = new Vue();
 window.axios = axios;
-const appOrtu = new Vue({
-  el: '#app-ortu',
-  components: { NoteList }
-});
 
 const app1 = new Vue({
   el: '#app-1',

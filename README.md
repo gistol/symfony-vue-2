@@ -1,6 +1,6 @@
-yarn add --dev  @symfony/webpack-encore webpack-notifier jquery vue vue-loader@^14 vue-template-compiler
+yarn add --dev @symfony/webpack-encore webpack-notifier jquery vue vue-loader@^14 vue-template-compiler materialize-css lodash axios
 
-Vue Notes
+Symfony-Vue
 
 Requerimientos:
     * [Node](https://nodejs.org/)
