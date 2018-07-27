@@ -21,6 +21,11 @@
     - Comandos para compilar los `assets` (javascripts y css)
 
     ```bash
+    
+    #Usando npm
+    ./node_modules/.bin/encore dev --watch
+    
+    # Usando Yarn
     # compila en modo "debug" una unica vez
     yarn run encore dev
 
