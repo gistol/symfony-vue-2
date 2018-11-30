@@ -17,51 +17,23 @@ import axios from 'axios';
 window.events = new Vue();
 window.axios = axios;
 
-const app1 = new Vue({
-  el: '#app-1',
-  data: {
-    message: 'Example 1'
-  }
-});
-
-const app2 = new Vue({
-  el: '#app-2',
-  data: {
-    message: 'Bound Title: You loaded this page on ' + new Date().toLocaleString()
-  }
-});
-
-const app3 = new Vue({
-  el: '#app-3',
-  data: {
-    todos: [
-      { text: 'Learn JavaScript' },
-      { text: 'Learn Vue' },
-      { text: 'Build something awesome' }
-    ]
-  }
-});
-
-const app4 = new Vue({
-  el: '#app-4',
-  data: {
-    message: 'This is my Example 4 text to reverse'
-  },
-  methods: {
-    reverseMessage: function () {
-      this.message = this.message.split('').reverse().join('')
-    }
-  }
-});
-
-const app5 = new Vue({
-  el: '#app-5',
-  data: {
-    message: 'Hello Vue!'
-  }
-});
-
-const app6 = new Vue({
-  el: '#app-6',
-  components: { ToDoList }
+const app = new Vue ({
+    el: '#app',
+    data: {
+        message_app1: 'Message example 1',
+        message_app2: 'Bound Title: You loaded this page on ' + new Date().toLocaleString(),
+        todos: [
+            { text: 'Learn JavaScript' },
+            { text: 'Learn Vue' },
+            { text: 'Build something awesome' }
+        ],
+        message_app4: 'This is my Example 4 text to reverse',
+        message_app5: 'Hello vue!'
+    },
+    methods: {
+        reverseMessage: function () {
+            this.message_app4 = this.message_app4.split('').reverse().join('')
+        }
+    },
+    components: { ToDoList }
 });
